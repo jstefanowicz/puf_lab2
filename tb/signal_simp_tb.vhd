@@ -3,9 +3,9 @@ end SIGNAL_SIMP_TB;
 
 architecture behavioural of SIGNAL_SIMP_TB is -- cialo architektoniczne projektu
 
-  signal A  :bit_vector(3 downto 0);           -- symulowane wejscie 'A'
-  signal B  :bit_vector(3 downto 0);           -- symulowane wejscie 'B'
-  signal Y  :bit_vector(3 downto 0);           -- obserwowane wyjscie 'Y'
+  signal A : bit_vector(3 downto 0);           -- symulowane wejscie 'A'
+  signal B : bit_vector(3 downto 0);           -- symulowane wejscie 'B'
+  signal Y : bit_vector(3 downto 0);           -- obserwowane wyjscie 'Y'
 
 begin                       -- poczatek czesci wykonawczej architektury
 
