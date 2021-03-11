@@ -1,0 +1,25 @@
+0. Ściągnij pliki projektowe z Githuba:
+
+   https://github.com/jstefanowicz/puf_lab2
+   
+1. Zbuduj szkielet projektu przez wywołanie w konsoli tcl Vivado komendy:
+  
+     source lab2_proj.tcl
+     
+   Szkielet projektu zawiera pliki testbenchów przygotowane do przetestowania
+   napisanych przez Was modułów oraz zalążki plików modułów zawierające listy
+   portów i nazwy modułów pasujące do plików test-bench.
+
+   Dla użytkowników Linuxa: można wywołać plik make_xpr.sh aby zbudować projekt (plik .xpr) z linii komend.
+
+2. W pliku signal_simp.vhd napisz komponent realizujący prostą operację logiczną na dwóch bitach wejściowych.
+   Uruchom komponent signal_simp.vhd korzystając z testbencha signal_simp_tb.vhd. Zaobserwuj działanie komponentu.
+
+3. Zaprojektuj komponent, który ma 3 wejścia 4bitowe i jedno wyjście 4bitowe. Wyjście ma przedstawiać wynik
+   wybranej operacji logicznej na dwóch 4bitowych wejściach. Pozostałe wejście służyć będzie do wyboru operacji
+   logicznej (jednej z następujących: AND, OR, XOR, NAND). 
+
+4. Zmodyfikuj komponent tak, żeby działanie było wybrane poprawnie w sytuacji gdy aktywny jest tylko jeden
+   bit w wektorze wyboru działania. Dla pozostałych sytuacji wynik działania ma mieć wartość 0. Wykorzystaj
+   instrukcję przypisania warunkowego: 
+   https://www.ics.uci.edu/~jmoorkan/vhdlref/cond_s_a.html
