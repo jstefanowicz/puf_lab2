@@ -11,17 +11,17 @@ begin                       -- poczatek czesci wykonawczej architektury
 
   process is                -- proces bezwarunkowy
   begin                     -- czesc wykonawcza procesu
-    A <= '0';               -- przypisanie sygna這wi 'A' wartosci '0'
-    B <= '0';               -- przypisanie sygna這wi 'B' wartosci '0'
+    A <= "0000";            -- przypisanie sygna這wi 'A' wartosci '0'
+    B <= "0000";            -- przypisanie sygna這wi 'B' wartosci '0'
     wait for 10 ns;         -- odczekanie 10 ns
-    A <= '1';               -- przypisanie sygna這wi 'A' wartosci '1'
-    B <= '0';               -- przypisanie sygna這wi 'B' wartosci '0'
+    A <= "1111";            -- przypisanie sygna這wi 'A' wartosci '1'
+    B <= "0000";            -- przypisanie sygna這wi 'B' wartosci '0'
     wait for 10 ns;         -- odczekanie 10 ns
-    A <= '0';               -- przypisanie sygna這wi 'A' wartosci '0'
-    B <= '1';               -- przypisanie sygna這wi 'B' wartosci '1'
+    A <= "0000";            -- przypisanie sygna這wi 'A' wartosci '0'
+    B <= "1111";            -- przypisanie sygna這wi 'B' wartosci '1'
     wait for 10 ns;         -- odczekanie 10 ns
-    A <= '1';               -- przypisanie sygna這wi 'A' wartosci '1'
-    B <= '1';               -- przypisanie sygna這wi 'B' wartosci '1'
+    A <= "1111";            -- przypisanie sygna這wi 'A' wartosci '1'
+    B <= "1111";            -- przypisanie sygna這wi 'B' wartosci '1'
     wait for 10 ns;         -- odczekanie 10 ns
   end process;              -- zakonczenie procesu  process is
 
